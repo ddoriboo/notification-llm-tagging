@@ -1,0 +1,41 @@
+# API 키 및 민감한 정보
+*.key
+config.py
+.env
+*api_key*
+
+# 개인정보가 포함된 파일들
+enhanced_tagged_notifications.csv
+tagged_intermediate.csv
+202507_.csv
+
+# Python 관련
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDE 관련
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS 관련
+.DS_Store
+Thumbs.db
+
+# 로그 파일
+*.log
+
+# 임시 파일
+temp/
+tmp/
+*.tmp
