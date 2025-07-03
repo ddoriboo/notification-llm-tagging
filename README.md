@@ -43,23 +43,36 @@
 
 ```bash
 # 필요한 패키지 설치
-pip install openai pandas tqdm matplotlib seaborn scikit-learn
+pip install -r requirements.txt
 
 # OpenAI API 키 설정 (환경변수 권장)
 export OPENAI_API_KEY="your-api-key-here"
 ```
 
-### 2. 기본 사용법
+### 2. 메인 프로그램 실행
 
-```python
-# 기본 태깅 실행
-python run_tagging.py
+```bash
+# 도움말 보기
+python main.py --help
 
-# 고도화된 분석 실행
-python enhanced_tagging.py
+# 기본 분석 실행 (API 키 불필요)
+python main.py analyze --input your_data.csv
+
+# LLM 태깅 실행
+python main.py tag --input your_data.csv --sample-size 100
 
 # 예측 모델 구축
-python prediction_model.py
+python main.py predict
+
+# 전체 파이프라인 실행 (분석 + 태깅 + 예측)
+python main.py full --input your_data.csv
+```
+
+### 3. 빠른 시작 가이드
+
+```bash
+# 가장 간단한 시작 방법 안내
+python quick_start.py
 ```
 
 ## 🎯 핵심 발견사항
